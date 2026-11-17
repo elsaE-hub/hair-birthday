@@ -2,7 +2,10 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#E8E4E2">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <title>הפקות שיער לימי הולדת</title>
 <meta name="description" content="צמות צבעוניות, תסרוקות וקישוטי שיער לימי הולדת – בהתאמה לקונספט שבחרתם. כל משתתפת יוצאת עם שקית מתנה!">
 <meta property="og:title" content="יום הולדת עם שיער של כוכבת! 🎀">
@@ -14,10 +17,9 @@
 *{box-sizing:border-box}
 html,body{margin:0;background:#E8E4E2}
 body{font-family:Rubik,sans-serif;color:#5B1035}
-.page{position:relative;max-width:480px;min-height:100vh;margin:0 auto;padding:44vw 14px 24px;background:#E8E4E2 url(/bg.png) center top/100% auto no-repeat}
-@media(min-width:480px){.page{padding-top:210px}}
+.page{position:relative;min-height:100vh;min-height:100dvh;padding:clamp(130px,21vh,220px) 16px clamp(28px,6vh,70px);display:flex;flex-direction:column;align-items:center;background:#E8E4E2 url(/bg.png) center top/cover no-repeat}
 .bsd{position:absolute;top:10px;right:14px;font-size:13px;font-weight:700}
-.card{background:rgba(255,255,255,.84);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:2px solid #fff;border-radius:26px;box-shadow:0 12px 30px rgba(138,10,75,.15);padding:22px 18px;display:flex;flex-direction:column;gap:18px}
+.card{width:100%;max-width:440px;background:rgba(255,255,255,.84);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:2px solid #fff;border-radius:26px;box-shadow:0 12px 30px rgba(138,10,75,.15);padding:22px 18px;display:flex;flex-direction:column;gap:18px}
 .pill{align-self:flex-start;background:#D10F67;color:#fff;font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px}
 .balloon{margin:0;font-family:Fredoka,sans-serif;font-weight:700;font-size:40px;line-height:1.1;background:linear-gradient(180deg,#FFD0E6 0%,#FF5FAE 38%,#E0157A 70%,#9E0F57 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:1px #fff;filter:drop-shadow(0 2px 0 rgba(138,10,75,.35)) drop-shadow(0 6px 10px rgba(209,15,103,.3))}
 .sub{margin:0;font-size:17px;line-height:1.45}
@@ -30,7 +32,7 @@ body{font-family:Rubik,sans-serif;color:#5B1035}
 .cta:hover{background:#B00C56}
 .modal{position:fixed;inset:0;background:rgba(60,5,35,.75);display:none;align-items:center;justify-content:center;padding:14px;z-index:10}
 .modal.open{display:flex}
-.box{background:#fff;border-radius:20px;padding:12px;width:100%;max-width:520px;max-height:100%;display:flex;flex-direction:column;gap:8px}
+.box{background:#fff;border-radius:20px;padding:12px;width:100%;max-width:520px;max-height:100%;overflow:hidden;display:flex;flex-direction:column;gap:8px}
 .box header{display:flex;align-items:center;justify-content:space-between}
 .box h2{margin:0;font-family:Fredoka,sans-serif;font-size:20px;color:#D10F67}
 .close{width:44px;height:44px;border-radius:50%;border:none;background:#FFE4F0;cursor:pointer;display:flex;align-items:center;justify-content:center}
