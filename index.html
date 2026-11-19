@@ -16,26 +16,26 @@
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;background:#E8E4E2}
-body{font-family:Rubik,sans-serif;color:#5A2A27}
+body{font-family:Rubik,sans-serif;color:#4A2420}
 .page{position:relative;min-height:100vh;min-height:100dvh;padding:clamp(130px,21vh,220px) 16px clamp(28px,6vh,70px);display:flex;flex-direction:column;align-items:center;background:#E8E4E2 url(/bg.png) center top/cover no-repeat}
 .bsd{position:absolute;top:10px;right:14px;font-size:13px;font-weight:700}
-.card{width:100%;max-width:440px;background:rgba(255,255,255,.84);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:2px solid #fff;border-radius:26px;box-shadow:0 12px 30px rgba(122,48,48,.15);padding:22px 18px;display:flex;flex-direction:column;gap:18px}
-.pill{align-self:flex-start;background:#A94A4A;color:#fff;font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px}
-.balloon{margin:0;font-family:Fredoka,sans-serif;font-weight:700;font-size:40px;line-height:1.1;background:linear-gradient(180deg,#F9D9D4 0%,#E8A3A0 38%,#B85C58 70%,#7A3330 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:1px #fff;filter:drop-shadow(0 2px 0 rgba(122,48,48,.35)) drop-shadow(0 6px 10px rgba(169,74,74,.3))}
+.card{width:100%;max-width:440px;background:rgba(255,250,248,.9);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:2px solid #fff;border-radius:26px;box-shadow:0 12px 30px rgba(122,48,48,.15);padding:22px 18px;display:flex;flex-direction:column;gap:18px}
+.pill{align-self:flex-start;background:#F3D3CF;color:#8A3A38;letter-spacing:.3px;font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px}
+.balloon{margin:0;font-family:Fredoka,sans-serif;font-weight:700;font-size:40px;line-height:1.1;background:linear-gradient(180deg,#FBE3DF 0%,#E7A6A4 38%,#C06A68 70%,#8A3A38 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:1px #fff;filter:drop-shadow(0 2px 0 rgba(122,48,48,.35)) drop-shadow(0 6px 10px rgba(169,74,74,.3))}
 .sub{margin:0;font-size:17px;line-height:1.45}
-.concept{margin:0;font-family:Fredoka,sans-serif;font-weight:700;font-size:21px;line-height:1.25;color:#B4475F}
-.cat{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;border:3px solid #A94A4A;color:#A94A4A;font-family:Fredoka,sans-serif;font-weight:700;font-size:21px;padding:14px 16px;border-radius:18px;cursor:pointer;box-shadow:0 6px 18px rgba(169,74,74,.18);width:100%}
-.gift{background:#FBEDEC;border-radius:18px;padding:16px;text-align:center;border:2px dashed #E3A9A4}
-.gift h3{margin:0 0 6px;font-family:Fredoka,sans-serif;font-weight:700;font-size:21px;color:#A94A4A}
+.concept{margin:0;font-family:Fredoka,sans-serif;font-weight:700;font-size:21px;line-height:1.25;color:#B05A5F}
+.cat{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;border:3px solid #9E4A47;color:#9E4A47;font-family:Fredoka,sans-serif;font-weight:700;font-size:21px;padding:14px 16px;border-radius:18px;cursor:pointer;box-shadow:0 6px 18px rgba(169,74,74,.18);width:100%}
+.gift{background:#F8E6E3;border-radius:18px;padding:16px;text-align:center;border:2px dashed #D9A19D}
+.gift h3{margin:0 0 6px;font-family:Fredoka,sans-serif;font-weight:700;font-size:21px;color:#9E4A47}
 .gift p{margin:0;font-size:14px}
-.cta{display:flex;align-items:center;justify-content:center;gap:10px;background:#A94A4A;color:#fff;text-decoration:none;font-weight:700;font-size:22px;padding:16px 20px;border-radius:999px;box-shadow:0 8px 22px rgba(169,74,74,.35)}
-.cta:hover{background:#8E3C3C}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#C06A68 0%,#8A3A38 100%);color:#fff;text-decoration:none;font-weight:700;font-size:22px;padding:16px 20px;border-radius:999px;box-shadow:0 8px 22px rgba(169,74,74,.35)}
+.cta:hover{background:#8A3A38}
 .modal{position:fixed;inset:0;background:rgba(60,25,22,.75);display:none;align-items:center;justify-content:center;padding:14px;z-index:10}
 .modal.open{display:flex}
 .box{background:#fff;border-radius:20px;padding:12px;width:100%;max-width:520px;max-height:100%;overflow:hidden;display:flex;flex-direction:column;gap:8px}
 .box header{display:flex;align-items:center;justify-content:space-between}
-.box h2{margin:0;font-family:Fredoka,sans-serif;font-size:20px;color:#A94A4A}
-.close{width:44px;height:44px;border-radius:50%;border:none;background:#F6E1DF;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.box h2{margin:0;font-family:Fredoka,sans-serif;font-size:20px;color:#9E4A47}
+.close{width:44px;height:44px;border-radius:50%;border:none;background:#F3D3CF;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .scroll{overflow:auto;border-radius:12px}
 .scroll img{display:block;width:100%;height:auto}
 </style>
@@ -47,16 +47,16 @@ body{font-family:Rubik,sans-serif;color:#5A2A27}
     <div style="display:flex;flex-direction:column;gap:10px">
       <div class="pill">הפקות שיער לימי הולדת</div>
       <h1 class="balloon">יום הולדת עם שיער של כוכבת!</h1>
-      <p class="sub"><b style="color:#A94A4A">צמות צבעוניות</b>, <b style="color:#B4475F">תסרוקות</b> ו<b style="color:#8C5A3C">קישוטי שיער</b></p>
-      <p class="concept">בוחרים קונספט – <span style="color:#A94A4A">אנחנו מתאימים את השיער</span></p>
+      <p class="sub"><b style="color:#9E4A47">צמות צבעוניות</b>, <b style="color:#B05A5F">תסרוקות</b> ו<b style="color:#9A6440">קישוטי שיער</b></p>
+      <p class="concept">בוחרים קונספט – <span style="color:#9E4A47">אנחנו מתאימים את השיער</span></p>
     </div>
     <button class="cat" type="button" id="openCat">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A94A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9E4A47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
       לצפייה בקטלוג התסרוקות
     </button>
     <div class="gift">
       <h3>כל משתתפת יוצאת עם שקית מתנה!</h3>
-      <p><b style="color:#B4475F">מוצרי שיער</b> + <b style="color:#8C5A3C">קישוטי שיער</b> – להמשיך לזרוח גם בבית</p>
+      <p><b style="color:#B05A5F">מוצרי שיער</b> + <b style="color:#9A6440">קישוטי שיער</b> – להמשיך לזרוח גם בבית</p>
     </div>
     <a class="cta" href="https://wa.me/972547750524?text=%D7%94%D7%99%D7%99%21%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%93%D7%A3%20%D7%94%D7%A0%D7%97%D7%99%D7%AA%D7%94%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9C%D7%94%D7%A4%D7%A7%D7%AA%20%D7%A9%D7%99%D7%A2%D7%A8%20%D7%9C%D7%99%D7%95%D7%9D%20%D7%94%D7%95%D7%9C%D7%93%D7%AA%20%F0%9F%8E%80%0A%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%9E%D7%91%D7%95%D7%A7%D7%A9%3A%0A%D7%92%D7%99%D7%9C%20%D7%99%D7%9C%D7%93%D7%AA%20%D7%99%D7%95%D7%9D%20%D7%94%D7%94%D7%95%D7%9C%D7%93%D7%AA%3A%0A%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%AA%D7%AA%D7%A4%D7%95%D7%AA%3A%0A%D7%A7%D7%95%D7%A0%D7%A1%D7%A4%D7%98%3A" target="_blank" rel="noopener">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
@@ -68,7 +68,7 @@ body{font-family:Rubik,sans-serif;color:#5A2A27}
   <div class="box">
     <header>
       <h2>קטלוג התסרוקות</h2>
-      <button class="close" type="button" id="closeCat" aria-label="סגירת הקטלוג"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A94A4A" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <button class="close" type="button" id="closeCat" aria-label="סגירת הקטלוג"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9E4A47" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </header>
     <div class="scroll"><img src="/catalog.png" alt="קטלוג תסרוקות לילדות: צמות, פקעות וקוקיות עם קישוטי שיער" loading="lazy"></div>
   </div>
